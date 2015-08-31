@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.megster.example.hrm" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.megster.example.hrm" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>HeartRate</name>
     <description>
         BLE Heart Rate Monitor Demo
@@ -9,5 +9,5 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-	<cdv:plugin name="com.megster.cordova.ble" />
+	<gap:plugin name="com.megster.cordova.ble" version="0.1.0" />
 </widget>

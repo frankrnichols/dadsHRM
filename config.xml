@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.megster.example.hrm" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
 <icon src="redman.png" gap:platform="android" gap:qualifier="hdpi" />
-<gap:splash src="backgnd1.png" gap:platform="android" gap:qualifier="hdpi" />
+<gap:splash src="splash.png" gap:platform="android" gap:qualifier="hdpi" />
     <name>Red Man</name>
     <description>
         BLE Heart Rate Monitor Demo

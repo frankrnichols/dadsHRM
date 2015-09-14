@@ -59,8 +59,6 @@ var app = {
     onConnect: function(peripheral) {
         app.status("Connected to " + peripheral.id);
         ble.notify(peripheral.id, heartRate.service, heartRate.measurement, app.onData, app.onError);
-		app.body.style.backgroundColor = "#FF9933";
-		app.body.style.backgroundImage = "url('Screen2_ConnectBluetooth.png')";
     },
     onDisconnect: function(reason) {
         alert("Disconnected " + reason);

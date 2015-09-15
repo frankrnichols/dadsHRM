@@ -4,3 +4,4 @@
 9/14/2015 18:8 Snapshot_2: first successful background image - the secret was that the img file needed to be in the css folder
 9/14/2015 18:11 Snapshot_3: first successful bgimage from Kevin's files. NEXT: make it 'cover' the area.
 9/14/2015 23:51 Snapshot_4: huh? I didn't think I wanted a backup here, but just in case
+9/15/2015 0:48 Snapshot_5: got background to show - now how to make it just cover the display instead of being too large for smartphone?

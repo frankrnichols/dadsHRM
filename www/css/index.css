@@ -5,7 +5,13 @@ body {
     padding:0px;
     width:100%;
     text-align: center;
-	background: #00ff00 url(KickScreen1.png) no-repeat fixed center;
+	background-image: url(KickScreen4.png); /*You will specify your image path here.*/
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: top center !important;
+	background-repeat: no-repeat !important;
+	background-attachment: fixed;
 	color: yellow;
 }
 

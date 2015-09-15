@@ -1,7 +1,7 @@
 @echo off
-if not exist CodeSnapshots md CodeSnapshots
+if not exist C:\Users\FrankR\"Google Drive"\PGBsnapshots md C:\Users\FrankR\"Google Drive"\PGBsnapshots
 if not exist "Read Me.txt" echo "Incremental backup notes" >>"Read Me.txt"
-cd CodeSnapshots
+cd C:\Users\FrankR\"Google Drive"\PGBsnapshots
 set /a var=00
 :LOOP
 if not exist Snapshot_%var% goto foundit
@@ -9,12 +9,9 @@ set /a var+=1
 goto LOOP
 :foundit
 mkdir Snapshot_%var%
-cd ..
-copy *.c CodeSnapshots\Snapshot_%var%
-copy *.h CodeSnapshots\Snapshot_%var%
-copy pca10031\s110\arm5\ble_app_hrs_s110_pca10031.uvprojx CodeSnapshots\Snapshot_%var%
-copy pca10031\s110\arm5\_build\*.hex CodeSnapshots\Snapshot_%var%
-echo.
+cd C:\Users\FrankR\Documents\GitHub\dadsHRM
+set path=%path%;c:\program files\7-zip
+7z a -r C:\Users\FrankR\"Google Drive"\PGBsnapshots\Snapshot_%var%\Snapshot_%var% *.*
 echo.
 echo.
 echo Your new folder is named = Snapshot_%var%
@@ -34,10 +31,7 @@ start "C:\Program Files (x86)\Notepad++\notepad++" "read me.txt"
 echo In your editor, Save edited file: READ ME.TXT
 echo and then...
 echo.
-pause
-copy /Y "read me.txt" CodeSnapshots\Snapshot_%var%
-mkdir C:\Users\FrankR\"Google Drive"\BLE_HSsnapshots\Snapshot_%var%
-copy CodeSnapshots\Snapshot_%var% C:\Users\FrankR\"Google Drive"\BLE_HSsnapshots\Snapshot_%var%
+copy /Y "read me.txt" C:\Users\FrankR\"Google Drive"\PGBsnapshots\Snapshot_%var%
 .
 .
 

@@ -1,0 +1,10 @@
+"Incremental backup notes" 
+9/13/2015 18:40 Snapshot_0: first successful incremental backup in the FRN style
+9/14/2015 17:52 Snapshot_1: first successful editing of css file for background color and (foreground) 'color' !
+9/14/2015 18:8 Snapshot_2: first successful background image - the secret was that the img file needed to be in the css folder
+9/14/2015 18:11 Snapshot_3: first successful bgimage from Kevin's files. NEXT: make it 'cover' the area.
+9/14/2015 23:51 Snapshot_4: huh? I didn't think I wanted a backup here, but just in case
+9/15/2015 0:48 Snapshot_5: got background to show - now how to make it just cover the display instead of being too large for smartphone?
+9/15/2015 0:56 Snapshot_6: got background to 'cover' but because the aspect-ratio is wrong for my droid, the bottom is a bit cut off. 
+	The top and sides are perfect
+9/15/2015 8:55 Snapshot_7: double-safe for continuing work at other campus after hours

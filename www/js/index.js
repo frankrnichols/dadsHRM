@@ -72,6 +72,7 @@ var app = {
         // See the characteristic specs http://goo.gl/N7S5ZS
         var data = new Uint8Array(buffer);
         beatsPerMinute.innerHTML = data[1];
+		beatsPerMinute = "3";
         this.setPointsImage();
     },
     onError: function(reason) {

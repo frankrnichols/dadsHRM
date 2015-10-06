@@ -33,3 +33,4 @@
 	        this.setBackgroundImage();
 	    },
 	which I suspect is not an ASCII value, but a numerical value, change by css to a displayed string. Need convert to ASCII or sumpin'
+10/5/2015 20:30 Snapshot_11: still playing around with the 'string()' thing... It works in initialize: but NOT in onData:

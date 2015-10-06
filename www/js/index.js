@@ -25,6 +25,7 @@ var app = {
     initialize: function() {
         this.bindEvents();
         this.setBackgroundImage();
+		
     },
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
@@ -70,8 +71,8 @@ var app = {
         // assuming heart rate measurement is Uint8 format, real code should check the flags
         // See the characteristic specs http://goo.gl/N7S5ZS
         var data = new Uint8Array(buffer);
-        beatsPerMinute.innerHTML = (data[1] + "0");
-        this.setBackgroundImage();
+        beatsPerMinute.innerHTML = data[1];
+        this.setPointsImage();
     },
     onError: function(reason) {
         alert("There was an error " + reason);
@@ -80,8 +81,12 @@ var app = {
         console.log(message);
         statusDiv.innerHTML = message;
     },
-    setBackgroundImage: function(){
+    setBackgroundImage: function()
     	var imageName = "css/KickScreen" + String(beatsPerMinute.innerHTML) + ".png";
+    	document.body.style.backgroundImage = "url('"+imageName+"')";
+    },
+    setPointsImage: function(){
+    	var imageName = "css/KickScreen" + beatsPerMinute.innerHTML + ".png";
     	document.body.style.backgroundImage = "url('"+imageName+"')";
     }
 };

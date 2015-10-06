@@ -70,7 +70,7 @@ var app = {
         // assuming heart rate measurement is Uint8 format, real code should check the flags
         // See the characteristic specs http://goo.gl/N7S5ZS
         var data = new Uint8Array(buffer);
-        beatsPerMinute.innerHTML = data[1];
+        beatsPerMinute.innerHTML = (data[1] + "0");
         this.setBackgroundImage();
     },
     onError: function(reason) {

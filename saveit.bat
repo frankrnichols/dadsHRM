@@ -30,6 +30,7 @@ echo %sdm%/%sdd%/%sdy% %sth%:%stm% Snapshot_%var%: >>"Read Me.txt"
 start "C:\Program Files (x86)\Notepad++\notepad++" "read me.txt"
 echo In your editor, Save edited file: READ ME.TXT
 echo and then...
+pause
 echo.
 copy /Y "read me.txt" C:\Users\FrankR\"Google Drive"\PGBsnapshots\Snapshot_%var%
 .

@@ -24,7 +24,6 @@ var heartRate = {
 var app = {
     initialize: function() {
         this.bindEvents();
-        this.setBackgroundImage();
     },
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
@@ -71,6 +70,7 @@ var app = {
         // See the characteristic specs http://goo.gl/N7S5ZS
         var data = new Uint8Array(buffer);
         beatsPerMinute.innerHTML = data[1];
+        this.setBackgroundImage();
     },
     onError: function(reason) {
         alert("There was an error " + reason);

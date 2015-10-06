@@ -8,3 +8,13 @@
 9/15/2015 0:56 Snapshot_6: got background to 'cover' but because the aspect-ratio is wrong for my droid, the bottom is a bit cut off. 
 	The top and sides are perfect
 9/15/2015 8:55 Snapshot_7: double-safe for continuing work at other campus after hours
+10/5/2015 19:24 Snapshot_8: Matt Misiurak's new code 
+	This should get you going. Replace the attached index.js with your current index.js file and then you can change 
+	the '<h1 id="beatsPerMinute"' element value in index.html to see the image change to match the corresponding number. 
+	The only changes I made to index.js was:
+		Added the function 'setBackgroundImage' to the end of the file. 
+		Added a call to the 'setBackgroundImage' function inside the 'initialize' function. 
+	You'll probably move the function call out of the 'initialize' function and put it at the end of the 'onData' function 
+	for practical use but I left it inside 'initialize' for easy initial testing. The 'setBackgroundImage' function will also 
+	need some minor editing for any images that don't fall into the 'KickScreen#.png' format.
+10/5/2015 19:32 Snapshot_9: ready to test for real (untested yet)

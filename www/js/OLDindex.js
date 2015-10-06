@@ -24,7 +24,6 @@ var heartRate = {
 var app = {
     initialize: function() {
         this.bindEvents();
-        this.setBackgroundImage();
     },
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
@@ -78,10 +77,6 @@ var app = {
     status: function(message) {
         console.log(message);
         statusDiv.innerHTML = message;
-    },
-    setBackgroundImage: function(){
-    	var imageName = "css/KickScreen" + String(beatsPerMinute.innerHTML) + ".png";
-    	document.body.style.backgroundImage = "url('"+imageName+"')";
     }
 };
 

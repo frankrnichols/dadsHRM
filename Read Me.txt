@@ -18,19 +18,3 @@
 	for practical use but I left it inside 'initialize' for easy initial testing. The 'setBackgroundImage' function will also 
 	need some minor editing for any images that don't fall into the 'KickScreen#.png' format.
 10/5/2015 19:32 Snapshot_9: ready to test for real (untested yet)
-10/5/2015 20:1 Snapshot_10: actually worked on phone during 
-	var app = {
-	    initialize: function() {
-	        this.bindEvents();
-	        this.setBackgroundImage();
-	    },
-	but did not work on the following call:
-	    onData: function(buffer) {
-	        // assuming heart rate measurement is Uint8 format, real code should check the flags
-	        // See the characteristic specs http://goo.gl/N7S5ZS
-	        var data = new Uint8Array(buffer);
-	        beatsPerMinute.innerHTML = data[1];
-	        this.setBackgroundImage();
-	    },
-	which I suspect is not an ASCII value, but a numerical value, change by css to a displayed string. Need convert to ASCII or sumpin'
-10/5/2015 20:30 Snapshot_11: still playing around with the 'string()' thing... It works in initialize: but NOT in onData:

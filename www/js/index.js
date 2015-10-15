@@ -73,6 +73,8 @@ var app = {
         beatsPerMinute.innerHTML = data[1];
         app.status("See Data " + data[1]);
         this.setBackgroundImage();
+        this.setBackgroundImage();
+        this.setBackgroundImage();
     },
     onError: function(reason) {
         alert("There was an error " + reason);

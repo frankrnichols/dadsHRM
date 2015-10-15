@@ -83,6 +83,7 @@ var app = {
     },
     setBackgroundImage: function(){
     	var imageName = "css/KickScreen" + beatsPerMinute.innerHTML + ".png";
+        app.status("Set bkgnd " + imageName);
     	document.body.style.backgroundImage = "url('"+imageName+"')";
     }
 };

@@ -69,6 +69,8 @@ var app = {
     onData: function(buffer) {
         // assuming heart rate measurement is Uint8 format, real code should check the flags
         // See the characteristic specs http://goo.gl/N7S5ZS
+        
+        app.status("See Data " + data[1]);
         var data = new Uint8Array(buffer);
         beatsPerMinute.innerHTML = data[1];
         this.setBackgroundImage();

@@ -25,6 +25,7 @@ var app = {
     initialize: function() {
         this.bindEvents();
         this.setBackgroundImage();
+        this.onData([0,0x4,0]);
     },
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);

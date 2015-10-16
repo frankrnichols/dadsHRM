@@ -33,15 +33,15 @@ var app = {
         app.scan();
     },
     scan: function() {
-        app.status("Scanning for Heart Rate Monitor");
+        app.status("Scanning for HackyTap");
 
         var foundHeartRateMonitor = false;
 
         function onScan(peripheral) {
             // this is demo code, assume there is only one heart rate monitor
-            console.log("Found " + JSON.stringify(peripheral));
+            // console.log("Found " + JSON.stringify(peripheral));
+            console.log("Found HackyTap");
             foundHeartRateMonitor = true;
-
             ble.connect(peripheral.id, app.onConnect, app.onDisconnect);
         }
 
@@ -53,13 +53,15 @@ var app = {
 
         setTimeout(function() {
             if (!foundHeartRateMonitor) {
-                app.status("Did not find a heart rate monitor.");
+                app.status("Did not find HackyTap.");
             }
-        }, 5000);
+        }, 15000);
     },
     onConnect: function(peripheral) {
         app.status("Connected to " + peripheral.id);
         ble.notify(peripheral.id, heartRate.service, heartRate.measurement, app.onData, app.onError);
+    	var imageName = "css/Screen0.png";
+		document.body.style.backgroundImage = "url('"+imageName+"')";
     },
     onDisconnect: function(reason) {
         alert("Disconnected " + reason);
@@ -72,7 +74,7 @@ var app = {
         var data = new Uint8Array(buffer);
         beatsPerMinute.innerHTML = data[1];
         var imageName = "css/Screen" + beatsPerMinute.innerHTML + ".png";
-        app.status("Set bkgnd " + imageName);
+        // app.status("Set bkgnd " + imageName);
     	document.body.style.backgroundImage = "url('"+imageName+"')";
     },
     onError: function(reason) {

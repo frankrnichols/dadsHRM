@@ -66,7 +66,7 @@ var app = {
     onDisconnect: function(reason) {
         alert("Disconnected " + reason);
         //beatsPerMinute.innerHTML = "...";
-        app.status("Disconnected");
+        // app.status("Disconnected");
     },
     onData: function(buffer) {
         // assuming heart rate measurement is Uint8 format, real code should check the flags

@@ -33,7 +33,7 @@ var app = {
         app.scan();
     },
     scan: function() {
-        app.status("Scanning for HackyTap");
+        //app.status("Scanning for HackyTap");
 
         var foundHeartRateMonitor = false;
 

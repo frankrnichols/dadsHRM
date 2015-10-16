@@ -8,11 +8,11 @@ body {
 	/* background-image: url("Screen0.png"); /*You will specify your image path here.*/
 	/* -moz-background-size: 100% 159%;
 	-webkit-background-size: 100% 159%; */
-	background-size:100% 158%;
+	background-size: cover;
 	background-position: top center !important;
 	background-repeat: no-repeat !important;
 	background-attachment: fixed;
-	color: blue;
+	color: red;
 }
 
 div {

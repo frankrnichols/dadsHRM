@@ -60,19 +60,19 @@ var app = {
     onConnect: function(peripheral) {
         app.status("Connected to " + peripheral.id);
         ble.notify(peripheral.id, heartRate.service, heartRate.measurement, app.onData, app.onError);
-    	var imageName = "css/Screen0.png";
+    	var imageName = "css/Splash.png";
 		document.body.style.backgroundImage = "url('"+imageName+"')";
     },
     onDisconnect: function(reason) {
         alert("Disconnected " + reason);
-        beatsPerMinute.innerHTML = "...";
+        //beatsPerMinute.innerHTML = "...";
         app.status("Disconnected");
     },
     onData: function(buffer) {
         // assuming heart rate measurement is Uint8 format, real code should check the flags
         // See the characteristic specs http://goo.gl/N7S5ZS
         var data = new Uint8Array(buffer);
-        beatsPerMinute.innerHTML = data[1];
+        //beatsPerMinute.innerHTML = data[1];
 		if(data[1] == 188)
 		{
 			var imageName = "css/Shake.png";

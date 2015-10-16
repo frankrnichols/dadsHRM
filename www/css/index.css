@@ -6,13 +6,13 @@ body {
     width:100%;
     text-align: center;
 	/* background-image: url("Screen0.png"); /*You will specify your image path here.*/
-	-moz-background-size: 100% 159%;
-	-webkit-background-size: 100% 159%; 
-	background-size:100% 159%;
+	/* -moz-background-size: 100% 159%;
+	-webkit-background-size: 100% 159%; */
+	background-size:100% 158%;
 	background-position: top center !important;
 	background-repeat: no-repeat !important;
 	background-attachment: fixed;
-	color: clear;
+	color: blue;
 }
 
 div {

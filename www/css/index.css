@@ -6,8 +6,8 @@ body {
     width:100%;
     text-align: center;
 	/* background-image: url("Screen0.png"); /*You will specify your image path here.*/
-	/* -moz-background-size: cover;
-	-webkit-background-size: cover; */
+	-moz-background-size: 100% 159%;
+	-webkit-background-size: 100% 159%; 
 	background-size:100% 159%;
 	background-position: top center !important;
 	background-repeat: no-repeat !important;
@@ -17,13 +17,16 @@ body {
 
 div {
     padding: 20px;
+	color: clear;
 }
 
 h1 {
     font-size:2em;
+	color: clear;
 }
 
 h2 {
     font-size:2em;
+	color: clear;
 }
 

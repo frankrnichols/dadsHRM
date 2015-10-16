@@ -58,7 +58,7 @@ var app = {
         }, 15000);
     },
     onConnect: function(peripheral) {
-        app.status("Connected to " + peripheral.id);
+        //app.status("Connected to " + peripheral.id);
         ble.notify(peripheral.id, heartRate.service, heartRate.measurement, app.onData, app.onError);
     	var imageName = "css/Splash.png";
 		document.body.style.backgroundImage = "url('"+imageName+"')";

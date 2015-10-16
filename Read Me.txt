@@ -18,3 +18,5 @@
 	for practical use but I left it inside 'initialize' for easy initial testing. The 'setBackgroundImage' function will also 
 	need some minor editing for any images that don't fall into the 'KickScreen#.png' format.
 10/5/2015 19:32 Snapshot_9: ready to test for real (untested yet)
+10/15/2015 21:45 Snapshot_12: this Droid thingie is good enuff to go.... I'm gonna try to fix the screen aspect ratios, then I'll try it
+	with the real sensor and perhaps tweak when the Shake.png and '0' screens come up.... otherwise, we're done

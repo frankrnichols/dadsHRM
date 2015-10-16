@@ -73,9 +73,16 @@ var app = {
         // See the characteristic specs http://goo.gl/N7S5ZS
         var data = new Uint8Array(buffer);
         beatsPerMinute.innerHTML = data[1];
-        var imageName = "css/Screen" + beatsPerMinute.innerHTML + ".png";
-        // app.status("Set bkgnd " + imageName);
-    	document.body.style.backgroundImage = "url('"+imageName+"')";
+		if(data[1] == 188)
+		{
+			var imageName = "css/Shake.png";
+			document.body.style.backgroundImage = "url('"+imageName+"')";
+		}
+		else
+		{
+			var imageName = "css/Screen" + beatsPerMinute.innerHTML + ".png";
+			document.body.style.backgroundImage = "url('"+imageName+"')";
+		}
     },
     onError: function(reason) {
         alert("There was an error " + reason);

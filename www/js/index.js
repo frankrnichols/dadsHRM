@@ -71,7 +71,7 @@ var app = {
         // See the characteristic specs http://goo.gl/N7S5ZS
         var data = new Uint8Array(buffer);
         beatsPerMinute.innerHTML = data[1];
-        var imageName = "css/KickScreen" + beatsPerMinute.innerHTML + ".png";
+        var imageName = "css/Screen" + beatsPerMinute.innerHTML + ".png";
         app.status("Set bkgnd " + imageName);
     	document.body.style.backgroundImage = "url('"+imageName+"')";
     },
@@ -83,8 +83,7 @@ var app = {
         statusDiv.innerHTML = message;
     },
     setBackgroundImage: function(){
-    	var imageName = "css/KickScreen" + beatsPerMinute.innerHTML + ".png";
-        alert("Set bkgnd " + imageName);
+    	var imageName = "css/Connect.png";
     	document.body.style.backgroundImage = "url('"+imageName+"')";
     }
 };
